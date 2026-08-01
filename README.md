@@ -153,7 +153,7 @@ cd ResumeBuilder
 
 python -m venv r1
 
-r1\Scripts\activate
+.\r1\Scripts\activate
 
 pip install -r requirements.txt
 
