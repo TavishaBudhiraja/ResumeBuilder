@@ -149,7 +149,7 @@ resume\_project/
 
 git clone https://github.com/TavishaBudhiraja/ResumeBuilder.git
 
-cd resume-builder
+cd ResumeBuilder
 
 python -m venv r1
 
@@ -179,22 +179,13 @@ http://127.0.0.1:8000/
 
 ## Application URLs
 
-
-
 | Page | URL |
-
 |---|---|
-
 | Dashboard | `/` |
-
 | Login | `/login/` |
-
 | Signup | `/signup/` |
-
 | Create Resume | `/create-resume/` |
-
 | Resume Form | `/resume-form/` |
-
 | Resume Preview | Available from dashboard after creating a resume |
 
 
