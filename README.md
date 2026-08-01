@@ -1,74 +1,69 @@
-\# Resume Builder
-
+# Resume Builder
 
 
 Resume Builder is a Django-based web application that allows users to create, manage, and preview resumes through a simple web interface.
 
 
-
-\## Project Description
-
+## Project Description
 
 
 This project helps users build resumes by entering their personal, educational, professional, and skill related details. Users can create resumes, view saved resumes from the dashboard, and preview the latest resume in a clean A4-style layout before saving or printing it.
-
-
 
 The application includes user authentication, resume creation, resume management, and a responsive resume preview page.
 
 
 
-\## Features
+## Features
 
 
 
-\- User signup and login
+- User signup and login
 
-\- User dashboard
+- User dashboard
 
-\- Create resume
+- Create resume
 
-\- Edit resume
+- Edit resume
 
-\- View saved resumes
+- View saved resumes
 
-\- Preview latest resume
+- Preview latest resume
 
-\- Clean A4-style resume preview
+- Clean A4-style resume preview
 
-\- Print-friendly resume layout
+- Print-friendly resume layout
 
-\- User-specific resume records
+- User-specific resume records
 
-\- Responsive user interface
-
-
-
-\## Technologies Used
+- Responsive user interface
 
 
 
-\- Python
-
-\- Django
-
-\- HTML
-
-\- CSS
-
-\- Bootstrap
-
-\- JavaScript
-
-\- SQLite
+## Technologies Used
 
 
 
-\## Main Modules
+- Python
+
+- Django
+
+- HTML
+
+- CSS
+
+- Bootstrap
+
+- JavaScript
+
+- SQLite
 
 
 
-\### Authentication
+## Main Modules
+
+
+
+### Authentication
 
 
 
@@ -76,7 +71,7 @@ Users can create an account, log in, and access their own resume dashboard.
 
 
 
-\### Dashboard
+### Dashboard
 
 
 
@@ -84,7 +79,7 @@ The dashboard displays resumes created by the logged-in user and provides option
 
 
 
-\### Resume Form
+### Resume Form
 
 
 
@@ -92,7 +87,7 @@ The resume form collects details such as personal information, education, experi
 
 
 
-\### Resume Preview
+### Resume Preview
 
 
 
@@ -100,7 +95,7 @@ The preview page allows users to review their latest resume in a clean A4 layout
 
 
 
-\## Project Structure
+## Project Structure
 
 
 
@@ -146,7 +141,7 @@ resume\_project/
 
 
 
-\## How to Run
+## How to Run
 
 
 
@@ -158,7 +153,7 @@ cd resume-builder
 
 python -m venv r1
 
-r1\\Scripts\\activate
+r1\Scripts\activate
 
 pip install -r requirements.txt
 
@@ -182,7 +177,7 @@ http://127.0.0.1:8000/
 
 
 
-\## Application URLs
+## Application URLs
 
 
 
@@ -204,7 +199,7 @@ http://127.0.0.1:8000/
 
 
 
-\## How to Use
+## How to Use
 
 
 
@@ -214,7 +209,7 @@ Create an account, log in, create a resume, view it from the dashboard, and prev
 
 
 
-\## Author
+## Author
 
 
 
