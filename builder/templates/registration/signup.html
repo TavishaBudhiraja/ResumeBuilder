@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Create Account - Resume Builder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, palevioletred, purple);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .signup-card {
+            width: 100%;
+            max-width: 440px;
+            background: white;
+            border-radius: 22px;
+            padding: 34px;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.22);
+        }
+
+        .signup-title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 900;
+            color: #111827;
+            margin-bottom: 8px;
+        }
+
+        .signup-subtitle {
+            text-align: center;
+            color: #6b7280;
+            font-weight: 700;
+            margin-bottom: 26px;
+        }
+
+        label {
+            font-weight: 800;
+            margin-bottom: 6px;
+            color: #111827;
+        }
+
+        input {
+            width: 100%;
+            border: 1px solid #d1d5db;
+            border-radius: 12px;
+            padding: 11px 13px;
+            margin-bottom: 14px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: purple;
+            box-shadow: 0 0 0 0.18rem rgba(128, 0, 128, 0.15);
+        }
+
+        .btn-signup {
+            width: 100%;
+            background: linear-gradient(135deg, palevioletred, purple);
+            color: white;
+            border: none;
+            border-radius: 13px;
+            padding: 12px;
+            font-weight: 900;
+            margin-top: 8px;
+        }
+
+        .btn-signup:hover {
+            color: white;
+            transform: translateY(-1px);
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 18px;
+            color: #6b7280;
+            font-weight: 700;
+        }
+
+        .login-link a {
+            color: purple;
+            font-weight: 900;
+            text-decoration: none;
+        }
+
+        .error-box {
+            background: #fee2e2;
+            color: #991b1b;
+            padding: 12px;
+            border-radius: 12px;
+            margin-bottom: 18px;
+            font-weight: 700;
+        }
+
+        .helptext {
+            display: block;
+            color: #6b7280;
+            font-size: 12px;
+            margin-top: -8px;
+            margin-bottom: 10px;
+        }
+
+        ul.errorlist {
+            color: #991b1b;
+            background: #fee2e2;
+            border-radius: 10px;
+            padding: 10px 14px;
+            list-style-position: inside;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="signup-card">
+
+    <div class="signup-title">Create Account</div>
+    <div class="signup-subtitle">Sign up to use Resume Builder</div>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit" class="btn btn-signup">
+            Create Account
+        </button>
+    </form>
+
+    <div class="login-link">
+        Already have an account?
+        <a href="{% url 'login' %}">Login here</a>
+    </div>
+
+</div>
+
+</body>
+</html>
